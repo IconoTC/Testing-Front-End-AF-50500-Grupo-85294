@@ -1,0 +1,27 @@
+{
+  "name": "in-situ2",
+  "version": "1.0.0",
+  "type": "module",
+  "workspaces": [
+    "projects/*"
+  ],
+  "description": "Fecha inicio: 17/11/2025 Fecha fin: 20/11/2025 Días 17, 18, 29 y 20 Noviembre 2025 Horario: 9:30 - 14:30 Duración: 20 horas 4 sesiones de 5 horas",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IconoTC/Testing-Front-End-AF-50500-Grupo-85294.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IconoTC/Testing-Front-End-AF-50500-Grupo-85294/issues"
+  },
+  "homepage": "https://github.com/IconoTC/Testing-Front-End-AF-50500-Grupo-85294#readme",
+  "prettier": {
+    "singleQuote": true
+  }
+}
