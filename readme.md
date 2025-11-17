@@ -20,9 +20,16 @@ Temario
 - Pruebas de Accesibilidad
 - Integración DevOps
 
+Proxi info
+
+git s
+npm config set https-proxy http://username:password@host:port
+
+fichero user/.npmrc
+
 ## Desarrollo del curso
 
-<!-- ### Día 1. Lunes 27/10/2025
+### Día 1. Lunes 27/10/2025
 
 - Presentación del curso, el formador y los alumnos.
 - Introducción a las pruebas de software.
@@ -33,18 +40,24 @@ Temario
 - Elementos de los tests unitarios
 
   - Estructura de los tests. Suites. Teardown o Setup.
+  - Primer tests con Vitest
+
+- [Descanso] - 11:45 a 12:10
+
+- Elementos de los tests unitarios
+
   - Patrones: Given, When, Then (Gherkin). Arrange, Act, Assert.
   - Primeros tests unitarios con Vitest
     - Matches
     - Matches de errores
-
-- [Descanso]
 
 - Taller de TDD: Factorial
   - Desarrollo del proceso TDD
   - Refactorización: Automatizando casos de uso
   - Casos de uso extremos (corner cases) y casos de uso límite (boundary cases)
   - Extracción de funciones auxiliares (mencionado)
+
+<!--
 - Test de Funciones
   - Asincronía
   - Mocks y Spies
