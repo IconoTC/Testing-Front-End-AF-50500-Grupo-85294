@@ -20,12 +20,16 @@ Temario
 - Pruebas de Accesibilidad
 - Integración DevOps
 
-Proxi info
+Proxy info
 
-git s
+Si estás detrás de un proxy, configura npm con los siguientes comandos:
+
+```shell
+npm config set proxy http://username:password@host:port
 npm config set https-proxy http://username:password@host:port
+```
 
-fichero user/.npmrc
+El resultado se almacena en el fichero user/.npmrc
 
 ## Desarrollo del curso
 
@@ -34,7 +38,7 @@ fichero user/.npmrc
 - Presentación del curso, el formador y los alumnos.
 - Introducción a las pruebas de software.
 - Configuración del entorno de desarrollo con Vitest.
-  - Monoreppo con npm
+  - Monorepo con npm
   - Proyecto con Vite - TS - React - Vitest - Testing Library
   - Proyecto con TS y Vitest
 - Elementos de los tests unitarios
@@ -57,25 +61,22 @@ fichero user/.npmrc
   - Casos de uso extremos (corner cases) y casos de uso límite (boundary cases)
   - Extracción de funciones auxiliares (mencionado)
 
-<!--
+### Día 2. Martes 28/10/2025
+
 - Test de Funciones
+
   - Asincronía
   - Mocks y Spies
-  - Caso real: getUsers con fetch y axios (creado sin tests) -->
-
-<!-- ### Día 2. Martes 28/10/2025
+  - Caso real: getUsers con fetch y axios (creado sin tests)
 
 - Test de Funciones (continuación)
+
   - Testando getUsers con fetch y axios
   - Spies en Vitest
-- Tests de Clases
 
-  - Interfaces
-  - Capa repositorio
-  - Capa servicio estado
+- [Descanso] : 11:55 a 12:15
 
-- [Descanso]
-
+<!--
 - Tests de Componentes con Testing Library
 - Conceptos básicos de Testing Library
   - Renderizado de componentes
@@ -113,6 +114,13 @@ fichero user/.npmrc
 
   - Introducción a la Context API de React
   - Testando componentes que consumen contextos
+
+Pendiente del inicio
+
+- Tests de Clases
+  - Interfaces
+  - Capa repositorio
+  - Capa servicio estado
 
 - Pruebas e2e y de Accesibilidad con Playwright
 
