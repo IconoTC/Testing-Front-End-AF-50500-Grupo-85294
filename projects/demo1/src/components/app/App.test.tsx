@@ -1,3 +1,9 @@
+import { render } from "@testing-library/react";
+import { App } from "./App";
+
+
+
+
 describe('App component', () => {
 
     beforeAll(() => {
@@ -16,15 +22,9 @@ describe('App component', () => {
         // Teardown code after all tests
     });
 
-    test('should work', () => {
-        const x = 22;
-
-        expect(x).toBe(22);
+    test('should render', () => {
+       render(<App />)
     });
 
-    test('should work', () => {
-        const x = 22;
 
-        expect(x).toBe(22);
-    });
 });
