@@ -76,7 +76,6 @@ El resultado se almacena en el fichero user/.npmrc
 
 - [Descanso] : 11:55 a 12:15
 
-<!--
 - Tests de Componentes con Testing Library
 - Conceptos básicos de Testing Library
   - Renderizado de componentes
@@ -87,7 +86,8 @@ El resultado se almacena en el fichero user/.npmrc
   - Header: props
   - Counter: events
   - Card: children
-  - App: integración v. mock de componentes -->
+  - App: solo render
+- Actualización de la configuración de testing
 
 <!-- ### Día 3. Miércoles 29/10/2025
 
@@ -96,6 +96,7 @@ El resultado se almacena en el fichero user/.npmrc
   - Configuración de rutas con React Router
   - Testando rutas sin carga diferida (lazy)
   - Testando rutas con carga diferida (lazy)
+
 - [Descanso]
 
 - Formularios y validaciones
