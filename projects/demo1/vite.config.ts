@@ -7,6 +7,14 @@ export default defineConfig({
     plugins: [react()],
     test: {
         environment: 'jsdom',
-        globals: true
+        globals: true,
+        setupFiles: ['src/testConfig.ts'],
+        // opcionalmente
+        include: ['**/*.test.ts', '**/*.test.tsx'],
+        // opcionalmente, para configurar la cobertura
+        coverage: {
+            include: ['src/**/*.ts', 'src/**/*.tsx'],
+            exclude: ['src/main.tsx', 'src/**/types/*.ts'],
+        },
     },
 });
