@@ -66,13 +66,10 @@ El resultado se almacena en el fichero user/.npmrc
 - Test de Funciones
 
   - Asincronía
-  - Mocks y Spies
-  - Caso real: getUsers con fetch y axios (creado sin tests)
-
-- Test de Funciones (continuación)
-
-  - Testando getUsers con fetch y axios
-  - Spies en Vitest
+    - Mocks y Spies
+    - Caso real: getUsers con fetch y axios (creado sin tests)
+    - Testando getUsers con fetch y axios
+    - Spies en Vitest
 
 - [Descanso] : 11:55 a 12:15
 
@@ -89,25 +86,32 @@ El resultado se almacena en el fichero user/.npmrc
   - App: solo render
 - Actualización de la configuración de testing
 
-<!-- ### Día 3. Miércoles 29/10/2025
+### Día 3. Miércoles 29/10/2025
 
 - Nuevo proyecto
 - Tests de Componentes con rutas
   - Configuración de rutas con React Router
   - Testando rutas sin carga diferida (lazy)
-  - Testando rutas con carga diferida (lazy)
+  - Componente Menú
+- [Descanso] : 11:45 a 12:05
 
-- [Descanso]
+
+- Tests de Componentes con rutas
+  - Test del menú
+  - Testando rutas con carga diferida (lazy)
 
 - Formularios y validaciones
   - Testando formularios controlados
-  - Testando formularios no controlados
-- Gestión de asincronía en tests -->
+  - (Testando formularios no controlados)
+  - (Formularios y validaciones)
 
+- Gestión de asincronía en tests
+  
+
+<!--
 <!-- ### Día 4. Jueves 30/10/2025
 
-- Formularios y validaciones (review )
-- Gestión de asincronía en tests (review )
+
 - Custom hooks
   - Introducción a los custom hooks
   - Testando custom hooks desde el componente
