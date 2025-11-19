@@ -10,7 +10,7 @@ export const Card: React.FC<Props> = ({ children, title }) => {
   return (
     <div className="card" 
     role="region" aria-label={title ? `${title} card` : "card"}>
-        {title && <h2>{title}</h2>}
+        {title && <h3>{title}</h3>}
         {children}
     </div>
   )

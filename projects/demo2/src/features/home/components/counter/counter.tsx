@@ -1,6 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
-import { Card } from '../card/card';
+import { Card } from '../../../../core/components/card/card';
+
 
 export const Counter: React.FC = () => {
     const [count, setCount] = useState(0);
