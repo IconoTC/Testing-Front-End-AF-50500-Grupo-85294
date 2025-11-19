@@ -1,15 +1,17 @@
 import React from 'react';
-import reactLogo from '../../../assets/react.svg'
-import viteLogo from '/vite.svg'
+import reactLogo from '../../../assets/react.svg';
+import viteLogo from '/vite.svg';
 import './header.css';
 
 type Props = {
     appTitle: string;
+    children?: React.ReactNode;
 };
 
-export const Header: React.FC<Props> = ({ appTitle }) => {
+export const Header: React.FC<Props> = ({ appTitle, children }) => {
     return (
         <header>
+            {children}
             <div>
                 <a href="https://vite.dev" target="_blank">
                     <img src={viteLogo} className="logo" alt="Vite logo" />
