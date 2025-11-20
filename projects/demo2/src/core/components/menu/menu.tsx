@@ -1,23 +1,21 @@
 import React from 'react';
 import './menu.css';
 import { Link } from 'react-router';
+import type { MenuOption } from '../app/App';
 
-export const Menu: React.FC = () => {
+type Props = {
+    menuOptions: MenuOption[]
+};
+
+export const Menu: React.FC<Props> = ({ menuOptions }) => {
     return (
         <nav>
             <ul>
-                <li>
-                    <Link to="/">Home</Link>
-                </li>
-                <li>
-                    <Link to="/users">Users</Link>
-                </li>
-                <li>
-                    <Link to="/todo">Todo</Link>
-                </li>
-                <li>
-                    <Link to="/about">About</Link>
-                </li>
+                {menuOptions.map(option => (
+                    <li key={option.path}>
+                        <Link to={option.path}>{option.label}</Link>
+                    </li>
+                ))}
             </ul>
         </nav>
     );

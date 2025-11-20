@@ -1,6 +1,6 @@
 import { createMemoryRouter, RouterProvider } from 'react-router';
 import { routes } from './routes';
-import { render, screen } from '@testing-library/react';
+import { render, screen, waitFor } from '@testing-library/react';
 import { HomePage } from '../../features/home/home-page';
 import { TodoPage } from '../../features/todo/todo-page';
 import { AboutPage } from '../../features/about/about-page';
@@ -33,12 +33,14 @@ describe('Router routes', () => {
         render(<RouterProvider router={mockRouter} />);
         expect(UsersPage).toHaveBeenCalled();
     });
-    test('should route to todo page', () => {
+    test('should route to todo page (lazy route)', async () => {
         const mockRouter = createMemoryRouter(routes, {
             initialEntries: ['/todo'],
         });
         render(<RouterProvider router={mockRouter} />);
-        expect(TodoPage).toHaveBeenCalled();
+        await waitFor(() => {
+            expect(TodoPage).toHaveBeenCalled();
+        });
     });
     test('should route to about page', () => {
         const mockRouter = createMemoryRouter(routes, {

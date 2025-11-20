@@ -1,4 +1,4 @@
-import { render } from '@testing-library/react';
+import { render, waitFor } from '@testing-library/react';
 import { App } from './App';
 import { Footer } from '../footer/footer';
 import { Header } from '../header/header';
@@ -44,12 +44,14 @@ describe('App component', () => {
     });
 
 
-    test('The routes component render the Todo Page', () => {
+    test('The routes component render the Todo Page (lazy route)', async () => {
         const mockRouter = createMemoryRouter(routes, {
             initialEntries: ['/todo'],
         });
         render(<RouterProvider router={mockRouter} />);
-        expect(TodoPage).toHaveBeenCalled();
+        await waitFor(() => {
+            expect(TodoPage).toHaveBeenCalled();
+        });
     });
 
     test('The routes component render the About Page', () => {
