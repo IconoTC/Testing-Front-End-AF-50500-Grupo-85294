@@ -13,6 +13,7 @@ export const RegisterForm: React.FC = () => {
     };
 
     const [userData, setUserData] = React.useState<Register>(initialState);
+    const [result, setResult] = React.useState<string>('');
 
     const handleChange = (
         event: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>
@@ -30,13 +31,17 @@ export const RegisterForm: React.FC = () => {
 
     const handleSubmit = (event: React.FormEvent<HTMLFormElement>): void => {
         event.preventDefault();
-        registerUser(userData);
+        registerUser(userData).then(() => {
+            setResult('Registration successful');
+        });
     };
 
     return (
         <form role="form" aria-label="Register Form" onSubmit={handleSubmit}>
             <h3>Registro en el curso</h3>
             <p>Ejemplo de 'Controlled Form'</p>
+
+            {result && <p>{result}</p>}
 
             <div className="group-control">
                 <input

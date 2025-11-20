@@ -4,6 +4,10 @@ import type { Register } from '../types/register';
 
 const url = 'https://jsonplaceholder.typicode.com/users';
 
+const mockData = {
+    username: 'Pepe Pérez',
+} as Register;
+
 describe('registerUser function', () => {
     beforeEach(() => {
         globalThis.fetch = vi.fn();
@@ -14,10 +18,6 @@ describe('registerUser function', () => {
     });
 
     test('should register user data correctly', async () => {
-        const mockData = {
-            username: 'Pepe Pérez',
-        } as Register;
-
         (globalThis.fetch as Mock).mockResolvedValue({
             ok: true,
             json: vi.fn().mockResolvedValue({
@@ -41,15 +41,15 @@ describe('registerUser function', () => {
         expect(data.username).toBe('Pepe Pérez');
     });
 
-    // test('should throw an error when response is not ok', async () => {
-    //     (globalThis.fetch as Mock).mockResolvedValue({
-    //         ok: false,
-    //     });
+    test('should throw an error when response is not ok', async () => {
+        (globalThis.fetch as Mock).mockResolvedValue({
+            ok: false,
+        });
 
-    //     await expect(getUserWithFetch()).rejects.toThrow(
-    //         'Network response was not ok'
-    //     );
-    // });
+        await expect(registerUser(mockData)).rejects.toThrow(
+            'Network response was not ok'
+        );
+    });
 });
 
 // describe('getUserWithFetch function with spies (mock)', () => {
