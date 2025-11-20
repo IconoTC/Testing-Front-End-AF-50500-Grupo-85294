@@ -89,43 +89,40 @@ El resultado se almacena en el fichero user/.npmrc
 ### Día 3. Miércoles 29/10/2025
 
 - Nuevo proyecto
+  - react-router
 - Tests de Componentes con rutas
+
   - Configuración de rutas con React Router
   - Testando rutas sin carga diferida (lazy)
   - Componente Menú
+
 - [Descanso] : 11:45 a 12:05
 
-
 - Tests de Componentes con rutas
+
   - Test del menú
-  - Testando rutas con carga diferida (lazy)
 
 - Formularios y validaciones
+
   - Testando formularios controlados
-  - (Testando formularios no controlados)
-  - (Formularios y validaciones)
+  - (Es igual testando formularios no controlados)
+  - Formularios y validaciones
 
 - Gestión de asincronía en tests
-  
+  - Testar un servicio que usa fetch -> mock
 
-<!--
-<!-- ### Día 4. Jueves 30/10/2025
+### Día 4. Jueves 30/10/2025
 
+- Gestión de asincronía en tests
 
-- Custom hooks
-  - Introducción a los custom hooks
-  - Testando custom hooks desde el componente
+  - Testando rutas con carga diferida (lazy)
+
 - Context API
 
   - Introducción a la Context API de React
   - Testando componentes que consumen contextos
 
-Pendiente del inicio
-
-- Tests de Clases
-  - Interfaces
-  - Capa repositorio
-  - Capa servicio estado
+- [Descanso]
 
 - Pruebas e2e y de Accesibilidad con Playwright
 
@@ -136,8 +133,6 @@ Pendiente del inicio
     - CLI
     - Report
     - UI
-
-- [Descanso]
 
 - Tests e2e con Playwright (continuación)
 
@@ -151,4 +146,17 @@ Pendiente del inicio
   - Navegación por teclado
   - Validación de roles ARIA
   - Captura y comparación de snapshots de accesibilidad
-  - Extensión axe-core en Playwright -->
+  - Extensión axe-core en Playwright
+
+<!--
+Posibles ampliaciones futuras:
+
+- Custom hooks
+  - Introducción a los custom hooks
+  - Testando custom hooks desde el componente
+
+- Tests de Clases
+  - Interfaces
+  - Capa repositorio
+  - Capa servicio estado
+-->
